@@ -1,6 +1,7 @@
-import readlineSync  from "readline-sync"
+import readlineSync from 'readline-sync';
 
-export  const salutation = () => {
-const userName = readlineSync.question('May I have your name? ')
-console.log('Hello, ' + userName + '!');
+const salutation = () => {
+  const userName = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${userName}!`);
 };
+export default salutation;
