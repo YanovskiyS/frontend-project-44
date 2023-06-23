@@ -8,7 +8,7 @@ const salutation = (rules, task) => {
   for (let i = 1; i < 4; i += 1) {
     const pairOfQuestionAndResult = task();
     console.log('question', pairOfQuestionAndResult[0]);
-    const answer = Number(readlineSync.question('Your answer: '));
+    const answer = readlineSync.question('Your answer: ');
     const rightAnswer = pairOfQuestionAndResult[1];
 
     if (answer === rightAnswer) {

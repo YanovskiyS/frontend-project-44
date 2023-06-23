@@ -15,7 +15,7 @@ const calc = () => {
 
     const question = `${firstRandomNumber} ${sign} ${secondRandomNumber}`;
 
-    let result = 0;
+    let result = '';
     switch (sign) {
       case '+':
         result = firstRandomNumber + secondRandomNumber;
