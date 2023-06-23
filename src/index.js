@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const salutation = (rules, task) => {
+const gameLogic = (rules, task) => {
   console.log('Welcome to yhe brain games');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
@@ -19,4 +19,4 @@ const salutation = (rules, task) => {
   }
   console.log(`Congratulatuon, ${userName}`);
 };
-export default salutation;
+export default gameLogic;

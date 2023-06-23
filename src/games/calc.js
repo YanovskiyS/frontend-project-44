@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import salutation from '../index.js';
+import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 import getRandomArrayElement from '../getRandomArrayElement.js';
 
@@ -32,6 +32,6 @@ const calc = () => {
 
     return [question, result];
   };
-  salutation(rules, taskCalc);
+  gameLogic(rules, taskCalc);
 };
 export default calc;

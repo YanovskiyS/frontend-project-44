@@ -10,7 +10,7 @@ brain-even:
 brain-calc:
 	node bin/brain-calc.js
 
-brain-gsd:
+brain-gcd:
 	node bin/brain-gcd.js
 
 publish:
