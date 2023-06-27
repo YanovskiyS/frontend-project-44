@@ -30,7 +30,7 @@ const calc = () => {
         result = null;
     }
 
-    return [question, result];
+    return [question, String(result)];
   };
   gameLogic(rules, taskCalc);
 };
