@@ -15,6 +15,7 @@ const gameLogic = (rules, task) => {
       console.log('Correct!');
     } else if (answer !== rightAnswer) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${rightAnswer}'\nLet's try again, ${userName}`);
+      break;
     }
   }
   console.log(`Congratulations, ${userName}!`);
