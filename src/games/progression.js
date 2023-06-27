@@ -12,7 +12,7 @@ const prog = () => {
     for (let i = firstElement; progression.length <= 10; i += step) {
       progression.push(i);
     }
-    const answer = progression.splice(firstElement, 1, '..');
+    const answer = progression.splice(getRandomNumber(), 1, '..');
     return [String(progression), String(answer)];
   };
   gameLogic(rules, taskProgression);
