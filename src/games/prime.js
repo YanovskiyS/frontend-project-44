@@ -9,11 +9,8 @@ const prime = () => {
     const question = getRandomNumber() + 1;
     let answer;
     for (let i = 2; i < question; i += 1) {
-      if ((question % i === 0) || (question === 1)) {
+      if (question % i === 0 || (question === 1)) {
         answer = 'no';
-        break;
-      } else {
-        answer = 'yes';
       }
     }
     return [question, answer];

@@ -9,7 +9,7 @@ const gameLogic = (rules, task) => {
     const pairOfQuestionAndResult = task();
     console.log('question', pairOfQuestionAndResult[0]);
     const answer = readlineSync.question('Your answer: ');
-    const rightAnswer = pairOfQuestionAndResult[1];
+    const rightAnswer = (pairOfQuestionAndResult[1]);
 
     if (answer === rightAnswer) {
       console.log('Correct!');
