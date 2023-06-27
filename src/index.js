@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const gameLogic = (rules, task) => {
-  console.log('Welcome to yhe brain games');
+  console.log('Welcome to the brain games');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
   console.log(rules);
@@ -17,6 +17,6 @@ const gameLogic = (rules, task) => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}\n Let's try again, ${userName}`);
     }
   }
-  console.log(`Congratulatuon, ${userName}`);
+  console.log(`Congratulation, ${userName}`);
 };
 export default gameLogic;
