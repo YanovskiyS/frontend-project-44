@@ -13,7 +13,7 @@ const prog = () => {
       progression.push(i);
     }
     const answer = progression.splice(getRandomNumber(), 1, '..');
-    return [String(progression), String(answer)];
+    return [(progression.join(' ')), String(answer)];
   };
   gameLogic(rules, taskProgression);
 };
