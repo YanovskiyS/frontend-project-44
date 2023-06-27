@@ -17,6 +17,6 @@ const gameLogic = (rules, task) => {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}\n Let's try again, ${userName}`);
     }
   }
-  console.log(`Congratulation, ${userName}!`);
+  console.log(`Congratulations, ${userName}!`);
 };
 export default gameLogic;
