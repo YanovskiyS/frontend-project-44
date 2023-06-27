@@ -3,7 +3,7 @@ import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const isEven = () => {
-  const rule = 'Answer \'yes\' if the number is even, otherwise answer \'no\'.';
+  const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const taskEven = () => {
     const randomNumber = getRandomNumber();
