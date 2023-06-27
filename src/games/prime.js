@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 import gameLogic from '../index.js';
-import getRandomNumber from '../getRandomInt.js'
+import getRandomNumber from '../getRandomInt.js';
 
 const prime = () => {
   const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
