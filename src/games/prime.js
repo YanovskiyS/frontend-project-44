@@ -8,9 +8,13 @@ const prime = () => {
   const taskPrime = () => {
     const question = getRandomNumber() + 1;
     let answer;
+    if (question < 2) {
+      answer = 'no';
+    }
     for (let i = 2; i < question; i += 1) {
       if (question % i === 0) {
         answer = 'no';
+        break;
       } else {
         answer = 'yes';
       }
