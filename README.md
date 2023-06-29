@@ -54,4 +54,4 @@ npm link
 ### Progression
 [![asciicast](https://asciinema.org/a/DnL7XkH0bq8LmS5BciAB4frTW.png)](https://asciinema.org/a/DnL7XkH0bq8LmS5BciAB4frTW)
 ### Prime number
-[![asciicast](https://https://asciinema.org/a/ihB86godu1CO8Gv9mrscZNg9K.png)](https://asciinema.org/a/ihB86godu1CO8Gv9mrscZNg9K)
+[![asciicast](https://asciinema.org/a/ihB86godu1CO8Gv9mrscZNg9K.svg)](https://asciinema.org/a/ihB86godu1CO8Gv9mrscZNg9K)
