@@ -10,6 +10,8 @@ const prime = () => {
     let answer;
     if (question < 2) {
       answer = 'no';
+    } else if (question === 2) {
+      answer = 'yes';
     }
     for (let i = 2; i < question; i += 1) {
       if (question % i === 0) {
