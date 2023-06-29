@@ -2,11 +2,11 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
-const isEven = () => {
+const runIsEven = () => {
   const rule = 'Answer "yes" if the number is even, otherwise answer "no".';
 
   const taskEven = () => {
-    const randomNumber = getRandomNumber();
+    const randomNumber = getRandomNumber(1, 10);
     let answer;
     if (randomNumber % 2 === 0) {
       answer = 'yes';
@@ -17,4 +17,4 @@ const isEven = () => {
   };
   gameLogic(rule, taskEven);
 };
-export default isEven;
+export default runIsEven;

@@ -2,11 +2,11 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
-const prime = () => {
+const RunPrime = () => {
   const rule = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
   const taskPrime = () => {
-    const question = getRandomNumber() + 1;
+    const question = getRandomNumber(1, 30);
     let answer;
     if (question < 2) {
       answer = 'no';
@@ -25,4 +25,4 @@ const prime = () => {
   };
   gameLogic(rule, taskPrime);
 };
-export default prime;
+export default RunPrime;

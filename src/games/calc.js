@@ -3,15 +3,15 @@ import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 import getRandomArrayElement from '../getRandomArrayElement.js';
 
-const calc = () => {
+const RunCalc = () => {
   const rules = 'What is the result of the expression?';
 
   const taskCalc = () => {
-    const firstRandomNumber = getRandomNumber();
-    const secondRandomNumber = getRandomNumber();
+    const firstRandomNumber = getRandomNumber(1, 10);
+    const secondRandomNumber = getRandomNumber(1, 10);
 
     const signs = ['+', '-', '*'];
-    const sign = getRandomArrayElement(signs);
+    const sign = signs[getRandomNumber(0, 2)];
 
     const question = `${firstRandomNumber} ${sign} ${secondRandomNumber}`;
 
@@ -34,4 +34,4 @@ const calc = () => {
   };
   gameLogic(rules, taskCalc);
 };
-export default calc;
+export default RunCalc;

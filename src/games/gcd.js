@@ -2,12 +2,12 @@
 import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
-const gsd = () => {
+const runGsd = () => {
   const rules = 'Find the greatest common divisor of given numbers.';
 
   const taskGsd = () => {
-    const firstRandomNumber = getRandomNumber();
-    const secondRandomNumber = getRandomNumber();
+    const firstRandomNumber = getRandomNumber(1, 30);
+    const secondRandomNumber = getRandomNumber(1, 30);
 
     const question = `${firstRandomNumber} ${secondRandomNumber}`;
     let x = firstRandomNumber;
@@ -21,4 +21,4 @@ const gsd = () => {
   };
   gameLogic(rules, taskGsd);
 };
-export default gsd;
+export default runGsd;
