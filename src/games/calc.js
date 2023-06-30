@@ -1,7 +1,6 @@
 #!/usr/bin/env node
 import gameLogic from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
-import getRandomArrayElement from '../getRandomArrayElement.js';
 
 const RunCalc = () => {
   const rules = 'What is the result of the expression?';
