@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const RunCalc = () => {
@@ -13,24 +13,26 @@ const RunCalc = () => {
     const sign = signs[getRandomNumber(0, 2)];
 
     const question = `${firstRandomNumber} ${sign} ${secondRandomNumber}`;
+    const calculation = () => {
+      let result = '';
+      switch (sign) {
+        case '+':
+          result = firstRandomNumber + secondRandomNumber;
+          break;
+        case '-':
+          result = firstRandomNumber - secondRandomNumber;
+          break;
+        case '*':
+          result = firstRandomNumber * secondRandomNumber;
+          break;
+        default:
+          result = null;
+      }
+      return result;
+    };
 
-    let result = '';
-    switch (sign) {
-      case '+':
-        result = firstRandomNumber + secondRandomNumber;
-        break;
-      case '-':
-        result = firstRandomNumber - secondRandomNumber;
-        break;
-      case '*':
-        result = firstRandomNumber * secondRandomNumber;
-        break;
-      default:
-        result = null;
-    }
-
-    return [question, String(result)];
+    return [question, String(calculation())];
   };
-  gameLogic(rules, taskCalc);
+  runGame(rules, taskCalc);
 };
 export default RunCalc;

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const runIsEven = () => {
@@ -15,6 +15,6 @@ const runIsEven = () => {
     }
     return [randomNumber, answer];
   };
-  gameLogic(rule, taskEven);
+  runGame(rule, taskEven);
 };
 export default runIsEven;

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const runProgression = () => {
@@ -15,6 +15,6 @@ const runProgression = () => {
     const answer = progression.splice(getRandomNumber(1, 10), 1, '..');
     return [(progression.join(' ')), String(answer)];
   };
-  gameLogic(rules, taskProgression);
+  runGame(rules, taskProgression);
 };
 export default runProgression;

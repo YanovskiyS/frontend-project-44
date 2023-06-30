@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const RunPrime = () => {
@@ -23,6 +23,6 @@ const RunPrime = () => {
     }
     return [question, answer];
   };
-  gameLogic(rule, taskPrime);
+  runGame(rule, taskPrime);
 };
 export default RunPrime;

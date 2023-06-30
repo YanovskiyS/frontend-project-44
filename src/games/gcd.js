@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import gameLogic from '../index.js';
+import runGame from '../index.js';
 import getRandomNumber from '../getRandomInt.js';
 
 const runGsd = () => {
@@ -19,6 +19,6 @@ const runGsd = () => {
     }
     return [question, String(x)];
   };
-  gameLogic(rules, taskGsd);
+  runGame(rules, taskGsd);
 };
 export default runGsd;
