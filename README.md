@@ -23,7 +23,7 @@ git clone git@github.com:YanovskiyS/frontend-project-44.git
 **Instal dependencies**
 
  ``
-npm instal
+npm install
 ``
 
 **Install package globally in your machine**
