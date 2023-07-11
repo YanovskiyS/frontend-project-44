@@ -1,35 +1,32 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
-const calculation = () => {
-  const firstRandomNumber = getRandomNumber(1, 10);
-  const secondRandomNumber = getRandomNumber(1, 10);
-
-  const signs = ['+', '-', '*'];
-  const sign = signs[getRandomNumber(0, 2)];
-
-  const question = `${firstRandomNumber} ${sign} ${secondRandomNumber}`;
+const calcExpresion = (firstNum, sign, secondNum) => {
   let result = '';
   switch (sign) {
     case '+':
-      result = firstRandomNumber + secondRandomNumber;
+      result = firstNum + secondNum;
       break;
     case '-':
-      result = firstRandomNumber - secondRandomNumber;
+      result = firstNum - secondNum;
       break;
     case '*':
-      result = firstRandomNumber * secondRandomNumber;
+      result = firstNum * secondNum;
       break;
     default:
       result = null;
   }
-
-  return [question, String(result)];
+  return String(result);
 };
+const rule = 'What is the result of the expression?';
 
-const runCalc = () => {
-  const rules = 'What is the result of the expression?';
-
-  runGame(rules, calculation);
+const getDataForRound = () => {
+  const firstNum = getRandomNumber(1, 15);
+  const secondNum = getRandomNumber(1, 15);
+  const signs = ['+', '-', '*'];
+  const sign = signs[getRandomNumber(0, 2)];
+  const question = `${firstNum} ${sign} ${secondNum}`;
+  const rightAnswer = calcExpresion(firstNum, sign, secondNum);
+  return [question, rightAnswer];
 };
-export default runCalc;
+export default () => runGame(rule, getDataForRound);
