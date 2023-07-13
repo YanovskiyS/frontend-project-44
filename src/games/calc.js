@@ -1,24 +1,21 @@
 import runGame from '../index.js';
 import getRandomNumber from '../utils.js';
 
+const rule = 'What is the result of the expression?';
+
+// eslint-disable-next-line consistent-return
 const calcExpresion = (firstNum, sign, secondNum) => {
-  let result = '';
   switch (sign) {
     case '+':
-      result = firstNum + secondNum;
-      break;
+      return firstNum + secondNum;
     case '-':
-      result = firstNum - secondNum;
-      break;
+      return firstNum - secondNum;
     case '*':
-      result = firstNum * secondNum;
-      break;
+      return firstNum * secondNum;
     default:
-      result = null;
+      return `Unknown sign: '${sign}'!`;
   }
-  return String(result);
 };
-const rule = 'What is the result of the expression?';
 
 const getDataForRound = () => {
   const firstNum = getRandomNumber(1, 15);
@@ -26,7 +23,7 @@ const getDataForRound = () => {
   const signs = ['+', '-', '*'];
   const sign = signs[getRandomNumber(0, 2)];
   const question = `${firstNum} ${sign} ${secondNum}`;
-  const rightAnswer = calcExpresion(firstNum, sign, secondNum);
+  const rightAnswer = String(calcExpresion(firstNum, sign, secondNum));
   return [question, rightAnswer];
 };
 export default () => runGame(rule, getDataForRound);
