@@ -13,7 +13,7 @@ const calcExpresion = (firstNum, sign, secondNum) => {
     case '*':
       return firstNum * secondNum;
     default:
-      return `Unknown sign: '${sign}'!`;
+      break;
   }
 };
 
