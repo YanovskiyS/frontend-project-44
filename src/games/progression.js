@@ -6,7 +6,7 @@ const progressionLength = 10;
 
 const createRandomProgression = (firstElement, step) => {
   const progression = [];
-  for (let i = firstElement; i <= progressionLength; i += step) {
+  for (let i = firstElement; progression.length <= progressionLength; i += step) {
     progression.push(i);
   }
   return progression;
