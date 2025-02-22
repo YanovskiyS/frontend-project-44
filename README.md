@@ -5,7 +5,7 @@
 # Brain Games
 ### Description
 
-***Cognitive enhancement game pack***
+***educational project with Arethmitic games***
 
 ## Setup
 
